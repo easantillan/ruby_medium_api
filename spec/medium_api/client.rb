@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+require 'pry'
+
+RSpec.describe MediumApi::Client do
+
+  subject(:client) {described_class.new(api_key: api_key)}
+  # do not care about the api_key
+  let(:api_key) { "2ada46c383ae76af4ca4dcbe42f7611062644f366bd6281c2efe78202b35f3c60" }
+
+  describe "#me" do
+    specify do
+      me = client.me
+      expect(me["name"]).to eq("Test Api Key")
+    end
+  end
+
+end
