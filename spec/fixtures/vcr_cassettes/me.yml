@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.medium.com/v1/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 2ada46c383ae76af4ca4dcbe42f7611062644f366bd6281c2efe78202b35f3c60
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Jan 2024 03:58:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Sepia-Upstream:
+      - medium
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      Medium-Fulfilled-By:
+      - valencia/main-20240129-084033-768f6657bb
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - sid=1:szoKp65x1+jkSP/QDSyzQYdxa6/0jwkaQsqBs5P+AFd+upPmqQ3+gN3C4415onkd; Path=/;
+        Domain=medium.com; Expires=Thu, 06 Mar 2025 03:58:36 GMT; HttpOnly; Secure;
+        SameSite=None
+      - uid=lo_f47a74441184; Path=/; Domain=medium.com; Expires=Thu, 06 Mar 2025 03:58:36
+        GMT; HttpOnly; Secure; SameSite=None
+      X-Envoy-Upstream-Service-Time:
+      - '46'
+      X-Obvious-Info:
+      - 20240130-1713-root,a24cb450
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"75919e984841fb53","ot-tracer-traceid":"72b29a933f2a6dda","ot-tracer-sampled":"true"}'
+      X-Powered-By:
+      - Medium
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 84df0983dd627d09-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"1b619f0be1bc842ffc55e8a20c7d6c9129ba896467b90ab9e23b86a36fdd2a67e","username":"nmisharin","name":"Test
+        Api Key","url":"https://medium.com/@nmisharin","imageUrl":"https://cdn-images-1.medium.com/fit/c/400/400/1*dmbNkD5D-u45r44go_cf0g.png"}}'
+  recorded_at: Wed, 31 Jan 2024 03:58:36 GMT
+recorded_with: VCR 6.2.0

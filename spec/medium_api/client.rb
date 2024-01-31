@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'pry'
 
 RSpec.describe MediumApi::Client do
 
@@ -9,7 +8,9 @@ RSpec.describe MediumApi::Client do
 
   describe "#me" do
     specify do
-      me = client.me
+      me = VCR.use_cassette 'me' do
+        client.me
+      end
       expect(me["name"]).to eq("Test Api Key")
     end
   end
