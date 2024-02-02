@@ -4,6 +4,7 @@ require_relative "medium_api/version"
 require_relative "medium_api/client"
 require_relative 'medium_api/configuration'
 require_relative 'medium_api/user'
+require_relative 'medium_api/utils'
 
 module MediumApi
   class Error < StandardError; end
@@ -19,7 +20,7 @@ module MediumApi
 
     def me
       attrs = client.me
-      User.new(**attrs)
+      User.new(**Utils.underscore_keys(attrs))
     end
 
     def client

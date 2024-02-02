@@ -1,4 +1,4 @@
 module MediumApi
-  class User < Struct.new(:id, :username, :name, :url, :imageUrl, keyword_init: true)
+  class User < Struct.new(:id, :username, :name, :url, :image_url, keyword_init: true)
   end
 end
