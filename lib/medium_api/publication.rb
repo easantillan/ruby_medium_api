@@ -4,7 +4,7 @@ module MediumApi
 
         def contributors
             client.publication_contributors(id)&.map do |contributor|
-                Contributor.new(contributor)
+                Contributor.new(Utils.underscore_keys(contributor))
             end
         end
     end
