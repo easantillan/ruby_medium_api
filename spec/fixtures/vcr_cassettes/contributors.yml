@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.medium.com/v1/publications/eca1ba5ae1ca/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sat, 03 Feb 2024 01:47:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '67'
+      Connection:
+      - keep-alive
+      Sepia-Upstream:
+      - medium
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 09 Sep 1999 09:09:09 GMT
+      Link:
+      - <https://medium.com/humans.txt>; rel="humans"
+      Medium-Fulfilled-By:
+      - valencia/main-20240202-092338-c856578433
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - sid=1:XVBprUHF62ndjGs7g4qIZ8NYJgdoRWclwNAhDvXylz0J+/UqcufwQVoErRul9KkI; Path=/;
+        Domain=medium.com; Expires=Sun, 09 Mar 2025 01:47:45 GMT; HttpOnly; Secure;
+        SameSite=None
+      - uid=lo_85178b55c998; Path=/; Domain=medium.com; Expires=Sun, 09 Mar 2025 01:47:45
+        GMT; HttpOnly; Secure; SameSite=None
+      X-Envoy-Upstream-Service-Time:
+      - '25'
+      X-Obvious-Info:
+      - 20240202-1940-root,e021415e
+      X-Opentracing:
+      - '{"ot-tracer-spanid":"3453b2e60face0ff","ot-tracer-traceid":"23cd311f4af50f05","ot-tracer-sampled":"true"}'
+      X-Powered-By:
+      - Medium
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 84f701fae9db312e-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"An access token is required.","code":6000}]}'
+  recorded_at: Sat, 03 Feb 2024 01:47:45 GMT
+recorded_with: VCR 6.2.0

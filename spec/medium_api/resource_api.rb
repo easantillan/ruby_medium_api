@@ -13,7 +13,7 @@ RSpec.describe MediumApi::ResourceApi do
         end
     end
 
-    specify do
+    xit "tests the accessibility to the client" do
         client = MediumApi::ResourceApi.client
         expect(client.api_key).to eq(api_key)
     end

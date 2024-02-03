@@ -16,5 +16,10 @@ module MediumApi
     def me
       self.class.get("/me")['data']
     end
+
+    def publication_contributors(publication_id)
+      self.class.get("/publications/#{publication_id}/contributors")['data']
+    end
+
   end
 end

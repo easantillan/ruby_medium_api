@@ -1,6 +1,7 @@
 module MediumApi::ResourceApi
-    #private
-    def self.client
+    private
+
+    def client
         MediumApi.client
     end
 end
