@@ -5,6 +5,7 @@ require_relative "medium_api/client"
 require_relative 'medium_api/configuration'
 require_relative 'medium_api/user'
 require_relative 'medium_api/utils'
+require_relative 'medium_api/resource_api'
 
 module MediumApi
   class Error < StandardError; end
